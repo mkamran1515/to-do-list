@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    background: linear-gradient(135deg, #153677, #4e085f);
+}
+.to-do-app {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+}
+.to-do-app h2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.to-do-app h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+input {
+    border: none;
+    background-color: transparent;
+    padding:10px;
+    outline: none;
+    flex: 1;
+}
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+   
+}
+.list-container  li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    position: relative;
+}
+.list-container li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-size:cover;
+    background-image: url("/images/unchecked.png");
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before {
+    background-image: url("/images/checked.png");
+}
+
+ul li span {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: #555;
+    cursor: pointer;
+    border-radius: 50%;
+}
+ul li span:hover {
+   background: #edeef0;
+   
+}
+
+/* message box  */ 
+.msg {
+    display: none;
+    background: #ff5945;
+    position: relative;
+    padding: 5px 20px;
+    border-radius: 35px;
+    margin: 10px 100px;
+    transition: 0.5s;
+}
+.msg h3 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+}
+.msg span {
+    position: absolute;
+    right: 20px;
+    top: 3px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}

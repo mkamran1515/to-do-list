@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <!-- favicon -->
+    <link rel="icon" href="images/icon.png">
+    <!-- css file link  -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="to-do-app">
+            <h2>To-do App <img src="images/icon.png"></h2>
+            <div class="msg" id="message-section">
+                <h3 id="msg-text"></h3>
+                <span onclick="hideMessage()">X</span>
+            </div>
+            <div class="row">
+                <input type="text" placeholder="Add a new task" id="inputBox"/>
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul class="list-container" id="task-container">
+             
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+
+            </ul>
+            
+        </div>
+    </div>
+    <!-- javascript ka tarka  -->
+    <script src="script.js"></script>
+</body>
+</html>
